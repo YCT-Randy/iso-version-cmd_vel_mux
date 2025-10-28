@@ -1,0 +1,11 @@
+<launch>
+  <arg name="show_debug_info" default="false" />
+  <arg name="config_path" default="$(find cmd_vel_mux)/cfg/config.yaml"/>
+
+  <node name="vel_mux_node" pkg="cmd_vel_mux" type="vel_mux_node" output="screen">
+    <param name="show_debug_info" value="$(arg show_debug_info)" />
+    <param name="config_path" value="$(arg config_path)"/>
+
+  </node>
+
+</launch>

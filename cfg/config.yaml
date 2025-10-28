@@ -1,0 +1,23 @@
+subscribers:
+  - name: "cmd_vel_emergency"
+    key_mode: -1
+    priority_level: 4
+    timeout: 1
+
+  - name: "cmd_vel_auto_navigation"
+    key_mode: 0
+    priority_level: 0
+    timeout: 1
+
+  - name: "cmd_vel_auto_station"
+    key_mode: 0
+    priority_level: 1
+    timeout: 1
+
+  - name: "cmd_vel_manual_amrui"
+    key_mode: 1
+    priority_level: 0
+    timeout: 1
+
+publisher:
+  - name: "cmd_vel"
